@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "purfume",
+      "name": "香水",
+      "description": "なんかすごい香水です。10km先の人が振り向きます。",
+      "image": "purfume.png",
+      "price": 3600
+    },
+    {
+      "id": "veil-cream",
+      "name": "クリーム",
+      "description": "なんかすごいクリームです。年齢が10歳若返ります。",
+      "image": "cream.png",
+      "price": 7200
+    },
+    {
+      "id": "hwater",
+      "name": "水素水",
+      "description": "本当に効果あるの？",
+      "image": "hwater.png",
+      "price": 99999
+    },
+    {
+      "id": "bear",
+      "name": "木彫りの熊",
+      "description": "おみやげで貰って困るやつ",
+      "image": "bear.png",
+      "price": 20000
+    },
+    {
+      "id": "tv",
+      "name": "テレビ",
+      "description": "映らない",
+      "image": "tv.png",
+      "price": 19800
+    }
+  ]
+}
