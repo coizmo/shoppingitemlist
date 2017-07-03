@@ -1,4 +1,5 @@
 import ItemList from './ItemList.js';
 
 ItemList.printAll('itemlist');
-ItemList.printIfReasonably('under10000', 10000);
+ItemList.printIfExpensively('over10000', 10000);
+ItemList.printIfContainKeyword('sugoi', 'なんかすごい');

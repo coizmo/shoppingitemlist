@@ -4,10 +4,18 @@ export default class ItemList {
         return shopItems;
     }
 
-    static printIfReasonably(targetDocumentID, price) {
+    static printIfContainKeyword(targetDocumentID, keyword) {
         let itemList = ItemList.readJson();
         if (itemList != null) {
-            let reasonablyItems = itemList.items.filter(item => item.price <= price);
+            let containsItems = itemList.items.filter(item => item.description.indexOf(keyword) !== -1);
+            ItemList.printList(targetDocumentID, containsItems);
+        }
+    }
+
+    static printIfExpensively(targetDocumentID, price) {
+        let itemList = ItemList.readJson();
+        if (itemList != null) {
+            let reasonablyItems = itemList.items.filter(item => item.price > price);
             ItemList.printList(targetDocumentID, reasonablyItems);
         }
     }
@@ -15,7 +23,6 @@ export default class ItemList {
     static printAll(targetDocumentID) {
         let itemList = ItemList.readJson();
         if (itemList != null) {
-            console.log(itemList);
             ItemList.printList(targetDocumentID, itemList.items);
         }
     }
